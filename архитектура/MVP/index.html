@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1v9.gg — Карточки услуг (БЭМ)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="catalog">
+        <!-- Блок: Карточка услуги -->
+        <article class="card">
+            <!-- Элементы блока card -->
+            <div class="card__badge">Хит продаж</div>
+            <h2 class="card__title">Бустинг League of Legends</h2>
+            <p class="card__description">Быстрый подъем ранга. Работаем с VPN и стримом.</p>
+            
+            <div class="card__price">
+                <span class="card__price-value">$45</span>
+                <span class="card__price-old">$60</span>
+            </div>
+            
+            <!-- Кнопка (отдельный блок внутри элемента) -->
+            <button class="card__btn btn btn_primary">Купить</button>
+        </article>
+
+        <!-- Вторая карточка с ДРУГИМИ модификаторами -->
+        <article class="card card_highlighted">
+            <div class="card__badge card__badge_hot">Скидка 20%</div>
+            <h2 class="card__title">Покупка аккаунта Valorant</h2>
+            <p class="card__description">Аккаунт с редкими скинами. 14 дней гарантии.</p>
+            
+            <div class="card__price">
+                <span class="card__price-value">$80</span>
+            </div>
+            
+            <!-- Кнопка с модификатором disabled -->
+            <button class="card__btn btn btn_secondary btn_disabled" disabled>Продано</button>
+        </article>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* =========================================
+   БАЗОВЫЕ СТИЛИ
+   ========================================= */
+body {
+    background-color: #1E1E24;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.catalog {
+    display: flex;
+    gap: 30px;
+}
+
+/* =========================================
+   БЛОК: .card (Карточка услуги)
+   ========================================= */
+.card {
+    background-color: #2B2D42;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Модификатор блока: Выделенная карточка (например, премиум) */
+.card_highlighted {
+    border: 2px solid #7B2CBF;
+    background-color: #242533;
+}
+
+/* --- Элементы блока .card --- */
+.card__badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background-color: #FCA311;
+    color: #000;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Модификатор элемента: Красный бейдж */
+.card__badge_hot {
+    background-color: #E63946;
+    color: #FFF;
+}
+
+.card__title {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #F8F9FA;
+}
+
+.card__description {
+    font-size: 14px;
+    color: #ADB5BD;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card__price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card__price-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00F5D4;
+}
+
+.card__price-old {
+    text-decoration: line-through;
+    color: #6C757D;
+    font-size: 16px;
+}
+
+/* =========================================
+   БЛОК: .btn (Кнопка)
+   ========================================= */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+/* Модификаторы кнопки */
+.btn_primary {
+    background-color: #7B2CBF;
+    color: white;
+}
+
+.btn_primary:hover {
+    background-color: #9D4EDD;
+}
+
+.btn_secondary {
+    background-color: #3A3B4C;
+    color: white;
+}
+
+/* Модификатор: Заблокированная кнопка */
+.btn_disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
